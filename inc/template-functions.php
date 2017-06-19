@@ -3,6 +3,9 @@
 if ( !function_exists('cmv_enqueue_scripts') ) {
 	function cmv_enqueue_scripts() {
 
+		// Include Open Sans font with cyrillic support
+		wp_enqueue_style( 'colormag_google_fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic' );
+
 		// Include Parent stylesheets
 		//$parent_style = 'colormag_style';
 		//wp_enqueue_style( $parent_style, _CMV_PARENT_URI . '/style.css' );
